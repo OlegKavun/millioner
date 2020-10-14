@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW_8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background">
+    <div class="game-container">
+      <div class="game-info active">
+        <div class="game-info-header">
+          <h2>Welcome to Millioner game</h2>
+          <p>At every round, you can see questions and choose option one of 4.
+            When you answers correctly, current prize is added to total prize
+            and doubled. Once per game you can replace current question by a new one.
+            <br>
+            <br>
+            Good luck!
+          </p>
+        </div>
+        <button class="button game-info-start-btn" type="button">Start Game</button>
+      </div>
+      <div class="game-header hide">
+        <div class="game-top">
+          <button class="button start" type="button">Start Game</button>
+          <div class="prizes">
+            <div class="total">
+              <p>Total prize: <span id="totalPrize">0</span></p>
+            </div>
+            <div class="current">
+              <p>Prize on current round: <span id="currentPrize">0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="question">
+          <div id="questionText"></div>
+        </div> 
+        <button class="button skip hide" type="button">Skip</button>
+      </div>
+      <div class="game-body hide"></div>
+    </div>
+  </div>
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

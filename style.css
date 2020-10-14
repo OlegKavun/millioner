@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+}
+.background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(37,31,41,1) 0%, rgba(36,3,14,1) 47%, rgba(57,0,113,1) 100%);
+}
+.game-container {
+    width: 900px;
+    height: 500px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px;
+    border: 2px solid rgba(231, 178, 252, 0.75);
+    border-radius: 70px;
+    background: linear-gradient(180deg, rgba(57,0,113,1) 0%, rgba(36,3,14,1) 47%, rgba(37,31,41,1) 100%);;
+    -webkit-box-shadow: 0px -2px 81px -9px rgba(231, 178, 252, 0.75);
+    box-shadow: 0px -2px 81px -9px rgba(221, 168, 241, 0.69);
+    display: flex;
+    flex-direction: column;
+}
+.game-container::before {
+    content: 'MILLIONER';
+    display: inline-block;
+    position: absolute;
+    top: -80px;
+    right: 69px;
+    font-size: 85px;
+    font-weight: bold;
+    letter-spacing: 25px;
+    color:  rgb(230, 221, 99, 0.4);
+}
+.game-header {
+    height: 50%;
+    position: relative;
+}
+.game-body {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.game-info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.game-info-start-btn {
+    display: inline-block;
+    margin-top: 50px;;
+}
+.game-info-header {
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+.game-info h2 {
+    margin: 40px auto;
+    font-size: 35px;
+    font-family: "Comic Sans MS", cursive;
+    color: rgba(220, 152, 247, 0.6);
+}
+.game-info p {
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: Sylfaen, serif;
+    color: #ffffff;
+    font-size: 20px;
+}
+.game-top {
+    display: flex;
+    justify-content: space-between;
+}
+.button {
+    font-family: "Impact", sans-serif;
+    font-weight: lighter; 
+    width: 150px;
+    height: 80px;
+    font-size: 28px;
+    background-color:rgba(231, 178, 252, 0.1);
+    border-radius: 15px;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.button:active {
+    background-color:rgba(231, 178, 252, 0.2);
+}
+.prizes {
+    width: 350px;
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive;
+    color: #ffffff;
+}
+.prizes p {
+    margin: 10px;
+}
+.skip {
+    border-radius: 50%;
+    width: 70px;
+    height: 55px;
+    font-size: 19px;
+    position: absolute;
+    right: -12px;
+    bottom: 0;
+}
+.question {
+    font-family: Sylfaen, serif;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+.question > div {
+    margin-top: 30px;
+}
+.answer {
+    width: 20%;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 70%;
+    max-height: 90%;
+    border-radius: 15px;
+    border: 1px solid rgba(231, 178, 252, 0.75);
+    font-family: Sylfaen, serif;
+    color:#ffffff;
+    text-align: center;
+    overflow: hidden;
+    cursor: default;
+}
+.answer::after {
+    content: '';
+    display: inline-block;
+    top: -9px;
+    right: -150px;
+    width: 40px;
+    height: 200px;
+    position: absolute;
+    background-color: rgba(231, 178, 252, 0.05);
+    transform: skewX(40deg);
+}
+.answer:hover::after {
+    right: 300px;
+    transition: 0.5s;
+}
+.hide {
+    display: none;
+}
